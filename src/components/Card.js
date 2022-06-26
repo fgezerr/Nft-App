@@ -26,7 +26,7 @@ function Card({ item }) {
 
         <Box display={"flex"} justifyContent="space-between">
           <Text fontSize={23} fontWeight="bold">
-            ${item.date}
+            ${item.price}
           </Text>
           <Button colorScheme="pink">Buy</Button>
         </Box>
