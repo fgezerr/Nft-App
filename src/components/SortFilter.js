@@ -9,7 +9,7 @@ import {
   Icon,
 } from "@chakra-ui/react";
 
-function Sort({ setSortBy }) {
+function SortFilter({ setSortBy }) {
   return (
     <div>
       <Box>
@@ -36,4 +36,4 @@ function Sort({ setSortBy }) {
   );
 }
 
-export default Sort;
+export default SortFilter;

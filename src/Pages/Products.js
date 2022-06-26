@@ -1,58 +1,22 @@
 import React, { useState, useEffect } from "react";
-import Card from "./Card";
+import Card from "../components/Card";
 import { SimpleGrid, Box, Text } from "@chakra-ui/react";
 import Data from "../data";
-import PriceFilter from "./PriceFilter";
-import TypeFilter from "./TypeFilter";
-import {
-  Paginator,
-  Container,
-  Previous,
-  Next,
-  PageGroup,
-  usePaginator,
-} from "chakra-paginator";
-import Sort from "./Sort";
+import PriceFilter from "../components/PriceFilter";
+import TypeFilter from "../components/TypeFilter";
+import SortFilter from "../components/SortFilter";
+import Paginate from "../components/Paginate";
 
 function Products() {
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
   const [filterType, setFilterType] = useState("");
   const [list, setList] = useState([]);
-  const [sortBy, setSortBy] = useState("priceAsc");
+  const [sortBy, setSortBy] = useState("");
   const [resultsFound, setResultsFound] = useState(true);
   const [curItems, setCurItems] = useState([]);
 
-  const {
-    pagesQuantity,
-    offset,
-    currentPage,
-    setCurrentPage,
-    setIsDisabled,
-    isDisabled,
-    pageSize,
-    setPageSize,
-  } = usePaginator({
-    total: list.length,
-    initialState: {
-      pageSize: 3,
-      isDisabled: false,
-      currentPage: 0,
-    },
-  });
-
-  useEffect(() => {
-    const offset = currentPage * pageSize;
-    const getList = (currentPage, pageSize) => {
-      setCurItems(list.slice(offset, offset + pageSize));
-    };
-
-    getList(currentPage, pageSize);
-  }, [currentPage, pageSize, list]);
-
-  const handlePageChange = (page) => {
-    setCurrentPage(page - 1);
-  };
+  //FİLTERİNG
 
   const applyFilters = () => {
     let updatedList = Data;
@@ -92,12 +56,10 @@ function Products() {
     applyFilters();
   }, [filterType, sortBy]);
 
-  console.log(sortBy);
-
   return (
     <div>
       <Box display="flex" gap={5} justifyContent="flex-end">
-        <Sort setSortBy={setSortBy} />
+        <SortFilter setSortBy={setSortBy} />
         <TypeFilter setFilterType={setFilterType} />
 
         <PriceFilter
@@ -117,26 +79,7 @@ function Products() {
         )}
       </SimpleGrid>
 
-      <Paginator
-        isDisabled={isDisabled}
-        /* innerLimit={innerLimit} */
-        currentPage={currentPage}
-        /* outerLimit={outerLimit} */
-        pagesQuantity={pagesQuantity}
-        onPageChange={handlePageChange}
-      >
-        <Container align="center" justify="space-between" w="full" p={4}>
-          <Previous>
-            Previous
-            {/* Or an icon from `react-icons` */}
-          </Previous>
-          <PageGroup isInline align="center" />
-          <Next>
-            Next
-            {/* Or an icon from `react-icons` */}
-          </Next>
-        </Container>
-      </Paginator>
+      <Paginate setCurItems={setCurItems} list={list} />
     </div>
   );
 }

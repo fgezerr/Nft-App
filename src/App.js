@@ -1,5 +1,5 @@
 import "./App.css";
-import Products from "./components/Products";
+import Products from "./Pages/Products";
 import Header from "./components/Header";
 import { Container } from "@chakra-ui/react";
 

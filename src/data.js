@@ -51,7 +51,7 @@ const Data = [
     currency: "BNB",
     image: "https://picsum.photos/200/300",
     type: "image",
-    date: "11-05-2091",
+    date: "11-05-2001",
   },
   {
     id: "7",
@@ -60,7 +60,7 @@ const Data = [
     currency: "BNB",
     image: "https://picsum.photos/200/300",
     type: "image",
-    date: "11-05-2431",
+    date: "11-05-2031",
   },
   {
     id: "8",
@@ -69,7 +69,7 @@ const Data = [
     currency: "BNB",
     image: "https://picsum.photos/200/300",
     type: "video",
-    date: "11-05-2541",
+    date: "11-05-2041",
   },
   {
     id: "9",
@@ -78,7 +78,7 @@ const Data = [
     currency: "BNB",
     image: "https://picsum.photos/200/300",
     type: "image",
-    date: "11-05-2671",
+    date: "11-05-2011",
   },
   {
     id: "10",
@@ -87,7 +87,7 @@ const Data = [
     currency: "BNB",
     image: "https://picsum.photos/200/300",
     type: "image",
-    date: "11-05-2781",
+    date: "11-05-2021",
   },
 ];
 
