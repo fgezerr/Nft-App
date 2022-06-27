@@ -6,7 +6,7 @@ const Data = [
     currency: "BNB",
     image: "https://picsum.photos/200/300",
     type: "image",
-    date: "11-05-2001",
+    date: "11/05/2001",
   },
   {
     id: "2",
@@ -15,7 +15,7 @@ const Data = [
     currency: "BNB",
     image: "https://picsum.photos/200/300",
     type: "image",
-    date: "11-05-2005",
+    date: "11/05/2005",
   },
   {
     id: "3",
@@ -24,7 +24,7 @@ const Data = [
     currency: "BNB",
     image: "https://picsum.photos/200/300",
     type: "image",
-    date: "11-05-2004",
+    date: "11/05/2004",
   },
   {
     id: "4",
@@ -33,7 +33,7 @@ const Data = [
     currency: "BNB",
     image: "https://picsum.photos/200/300",
     type: "image",
-    date: "11-05-2008",
+    date: "11/05/2008",
   },
   {
     id: "5",
@@ -42,7 +42,7 @@ const Data = [
     currency: "BNB",
     image: "https://picsum.photos/200/300",
     type: "video",
-    date: "11-05-2006",
+    date: "11/05/2006",
   },
   {
     id: "6",
@@ -51,7 +51,7 @@ const Data = [
     currency: "BNB",
     image: "https://picsum.photos/200/300",
     type: "image",
-    date: "11-05-2001",
+    date: "11/05/2001",
   },
   {
     id: "7",
@@ -60,7 +60,7 @@ const Data = [
     currency: "BNB",
     image: "https://picsum.photos/200/300",
     type: "image",
-    date: "11-05-2031",
+    date: "11/05/2031",
   },
   {
     id: "8",
@@ -69,7 +69,7 @@ const Data = [
     currency: "BNB",
     image: "https://picsum.photos/200/300",
     type: "video",
-    date: "11-05-2041",
+    date: "11/05/2041",
   },
   {
     id: "9",
@@ -78,7 +78,7 @@ const Data = [
     currency: "BNB",
     image: "https://picsum.photos/200/300",
     type: "image",
-    date: "11-05-2011",
+    date: "11/05/2011",
   },
   {
     id: "10",
@@ -87,7 +87,7 @@ const Data = [
     currency: "BNB",
     image: "https://picsum.photos/200/300",
     type: "image",
-    date: "11-05-2021",
+    date: "11/05/2021",
   },
 ];
 

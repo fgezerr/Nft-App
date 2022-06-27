@@ -5,8 +5,8 @@ function Header() {
   return (
     <div>
       <Box py={5} display={"flex"} justifyContent={"center"}>
-        <Text fontSize={35} fontWeight={650}>
-          NFT Filtering App
+        <Text fontSize={25} fontWeight={700}>
+          NFT FİLTERİNG APP
         </Text>
       </Box>
     </div>

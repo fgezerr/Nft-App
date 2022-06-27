@@ -5,12 +5,10 @@ function Card({ item }) {
   return (
     <div>
       <Box
-        mb={18}
         bg="white"
         boxShadow="2xl"
         borderWidth="1px"
         p="5"
-        pb="2"
         borderRadius="lg"
         overflow="hidden"
       >
@@ -24,11 +22,16 @@ function Card({ item }) {
           loading="lazy"
         />
 
-        <Box display={"flex"} justifyContent="space-between">
-          <Text fontSize={23} fontWeight="bold">
-            ${item.price}
+        <Box alignItems="center" display="flex" justifyContent="space-between">
+          <Text pt="3" fontSize={14} fontWeight="bold">
+            {item.price}({item.currency})<Text fontSize="9">{item.date}</Text>
           </Text>
-          <Button colorScheme="pink">Buy</Button>
+          <Text pt="2" fontSize={18} fontWeight="semibold">
+            {item.title}
+          </Text>
+          <Box mt="4">
+            <Button colorScheme="pink">Buy</Button>
+          </Box>
         </Box>
       </Box>
     </div>
